@@ -40,11 +40,11 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-
 // Routes
 app.use("/login", require("./routes/login"));
 app.use("/signup", require("./routes/signup"));
 app.use("/index", require("./routes/index"));
+app.use("/profile", require("./routes/profile"));
 
 // Host server on PORT
 app.listen(PORT, () => {
